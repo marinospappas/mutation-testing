@@ -3,24 +3,20 @@ package com.mpdev.bikerace;
 import com.mpdev.bicyclev1.Bicycle;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mock;
+import org.mockito.Mockito;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.when;
-import static org.mockito.MockitoAnnotations.initMocks;
 
 public class TestBikeRace {
 
     private final BikeRace bikeRace = new BikeRace();
 
-    @Mock
-    private Bicycle bike1;
-    @Mock
-    private Bicycle bike2;
+    private final Bicycle bike1 = Mockito.mock(Bicycle.class);
+    private final Bicycle bike2 = Mockito.mock(Bicycle.class);
 
     @BeforeEach
     void setup() {
-        initMocks(this);
         when(bike1.getMaxSpeed()).thenReturn(25);
         when(bike1.getSpeed())
                 .thenReturn(0)

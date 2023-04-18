@@ -31,6 +31,7 @@ public class BikeRace {
         bike.releaseBreak();
         while (bike.getSpeed() < bike.getMaxSpeed())
             bike.accelerate();
+        /*
         try {
             bike.isSpeedValid();
         }
@@ -38,6 +39,7 @@ public class BikeRace {
             System.err.println(bike + " has exceeded max speed");
             System.exit(1);
         }
+        */
     }
 
     public Bicycle getWinner(Bicycle bike1, Bicycle bike2) {

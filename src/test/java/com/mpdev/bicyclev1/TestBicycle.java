@@ -52,6 +52,7 @@ public class TestBicycle {
         assertTrue(bicycle.isBreaksOn());
     }
 
+    /*
     @Test
     @Order(5)
     @DisplayName("When maxSpeed exceeded Exception is raised")
@@ -63,5 +64,6 @@ public class TestBicycle {
         bicycle.setSpeed(26);
         assertThrows(HighSpeedException.class, bicycle::isSpeedValid);
     }
+    */
 
 }

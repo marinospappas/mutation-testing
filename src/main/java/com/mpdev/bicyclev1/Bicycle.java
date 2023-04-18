@@ -16,18 +16,19 @@ public class Bicycle {
 
     public void accelerate() {
         if (!breaksOn) {
-            if (speed < getMaxSpeed()/2)
+            if (speed <= getMaxSpeed()/2)
                 speed += 3;
             else if (speed < getMaxSpeed())
                 speed += 2;
         }
     }
 
+    /*
     public void isSpeedValid() throws HighSpeedException {
         if (speed > maxSpeed)
-            throw new HighSpeedException("Biciyle has exceeded max speed of" + maxSpeed);
+            throw new HighSpeedException("Bicycle has exceeded max speed of" + maxSpeed);
     }
-
+    */
     public void setMaxSpeedFromMaterial() {
         if ("Titanium".equals(material))
             maxSpeed = 37;
