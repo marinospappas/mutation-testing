@@ -1,14 +1,14 @@
-package com.mpdev.bicyclexx;
+package com.mpdev.bicyclebug;
 
-public enum MaterialEnumV2 {
+public enum MaterialEnum {
     Aluminium(20),
     Titanium(25),
     Carbon(29),
-    Steel(10);
+    Unknown(15);
 
     private final int maxSpeed;
 
-    MaterialEnumV2(int maxSpeed) {
+    MaterialEnum(int maxSpeed) {
         this.maxSpeed = maxSpeed;
     }
 
