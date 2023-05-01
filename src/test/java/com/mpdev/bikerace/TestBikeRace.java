@@ -37,10 +37,17 @@ public class TestBikeRace {
     }
 
     @Test
-    void bikeInstanceIsCreatedCorrectly() {
+    void bike1InstanceIsCreatedCorrectly() {
         assertEquals(0, bike1.getSpeed());
         assertEquals(25, bike1.getMaxSpeed());
         assertTrue(bike1.isBreaksOn());
+    }
+
+    @Test
+    void bike2InstanceIsCreatedCorrectly() {
+        assertEquals(0, bike2.getSpeed());
+        assertEquals(37, bike2.getMaxSpeed());
+        assertTrue(bike2.isBreaksOn());
     }
 
     @Test

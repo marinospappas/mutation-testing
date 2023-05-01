@@ -6,7 +6,7 @@ import com.mpdev.exception.HighSpeedException;
 public class BikeRace {
 
     public static void main(String[] args) {
-        (new BikeRace()).runThis();
+        new BikeRace().runThis();
     }
 
     private void runThis() {
@@ -36,7 +36,7 @@ public class BikeRace {
             bike.isSpeedValid();
         }
         catch(HighSpeedException e) {
-            System.err.println(bike + " has exceeded max speed");
+            System.err.println("Exception: " + bike + " has exceeded max speed");
             System.exit(1);
         }
         */

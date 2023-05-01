@@ -28,6 +28,11 @@ public class TestBicycle {
     @CsvSource({
             "Aluminium, 0, 3",
             "Aluminium, 16, 18",
+
+            "Aluminium, 12, 15",
+            "Aluminium, 13, 15",
+
+
             "Titanium, 0, 3",
             "Titanium, 20, 22",
     })
